@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: black solid;
 }
 
 
@@ -28,40 +29,42 @@ img{
     object-fit: contain;
 }
 
-.navega{
+.navega{ 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-right: 1%;
     justify-content: center;
 
-    height: 12vh;
-    width: 25%;
-    background-color: black;
+    height: 10vh;
+    width: 40%;
+    background-color: aliceblue;
 }
 
 .menu{
     display: flex;
+    flex-direction: row;
     align-self: flex-end;
+
     width: 90%;
     height: 5vh;
     margin-bottom: 1%;
-    margin-right: 4%;
-    background-color: rgb(255, 255, 255);
     margin-top: 1%;
+
+    font-size: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .icones{
     display: flex;
     flex-direction: row;
     align-self: flex-end;
-    height: 5vh;
-    width: 25%;
-    margin-right: 4%;
-    margin-top: 1%;
+
+    height: 3vh;
+    width: 20%;
 }
 
-.carousel{
+.carousel .img{
     display: flex;
     width: 100%;
     height: 10vh;
