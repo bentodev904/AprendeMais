@@ -92,14 +92,69 @@ img{
 
     margin-top: 3%;
     width: 100%;
-    height: 15vh;
+    height: 15%;
 
     color: #2C4141;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 100%;
+    font-weight: 400;
 }
 
 .text span{
     margin-left: 25%;
     margin-right: 25%;
+}
+
+.contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin-top: 5%;
+    width: 100%;
+    height: 40vh;
+    background-color: aqua;
+}
+
+.subject{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    width: 20%;
+    background-color:aquamarine ;
+}
+
+.bola{
+    display: flex;
+    align-self: center;
+
+    padding: 10%;
+    background-color: #2B4141;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-top: 4%;
+}
+
+.bola img{
+    width: 8vh;
+    object-fit: fill;
+}
+
+.texts{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10%;
+    align-self: center;
+    width: fit-content;
+}
+
+.texts h1{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.texts h2{
+    font-size: medium;
 }
