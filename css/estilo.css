@@ -113,7 +113,7 @@ img{
 
     margin-top: 5%;
     width: 100%;
-    height: 40vh;
+    height: fit-content;
 }
 
 .subject{
@@ -122,6 +122,7 @@ img{
     align-content: center;
 
     width: 20%;
+    background-color: #c7c7c7;
 }
 
 .bola{
@@ -160,4 +161,94 @@ img{
 .texts h2{
     color: #E4572E;
     font-size: larger;
+    text-align: center;
+}
+
+.link{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin-top: 1vh;
+    height: fit-content;
+    width: 90%;
+}
+
+.link span{
+    align-self: flex-end;
+    
+    background-color:aquamarine;
+    color: #E4572E;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2vh;
+    font-weight: 50;
+}
+
+.line{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: fit-content;
+    width: 100%;
+}
+
+.line span{
+    margin-left: 5%;
+    width: 20%;
+    color: #44a1a0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.5vh;
+    font-weight: 200;
+}
+
+.line hr{
+    margin-right: 5%;
+    width: 60%;
+    border: .2vh solid #44a1a0;
+}
+
+.areas{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+
+    width: 100%;
+    background-color: aqua;
+}
+
+.area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    width: 30%;
+    border-radius: 10%;
+    /* padding: 10%; */
+    background-color: aliceblue;
+}
+
+.foto{
+    display: flex;
+    align-self: center;
+
+    width: 100%;
+    object-fit: contain;
+}
+
+.foto img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.area h1{
+    width: 100%;
 }
