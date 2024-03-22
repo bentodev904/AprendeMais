@@ -122,7 +122,6 @@ img{
     align-content: center;
 
     width: 20%;
-    background-color: #c7c7c7;
 }
 
 .bola{
@@ -178,7 +177,8 @@ img{
 .link span{
     align-self: flex-end;
     
-    background-color:aquamarine;
+    margin-top: 2%;
+    margin-right: 5%;
     color: #E4572E;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2vh;
@@ -217,38 +217,112 @@ img{
 .areas{
     display: flex;
     flex-direction: row;
+    align-self: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
 
-    width: 100%;
-    background-color: aqua;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: fit-content;
 }
 
 .area{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
 
+    box-shadow: 6px 8px 8px 6px #CCCC;
+    text-align: justify;
     width: 30%;
-    border-radius: 10%;
-    /* padding: 10%; */
-    background-color: aliceblue;
+    height: 38vh;
+    background-color: #E4572E;
+    border-radius: 4%;
 }
 
 .foto{
     display: flex;
     align-self: center;
 
+    background-color: #c7c7c7;
+    overflow: hidden;
     width: 100%;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+    height: 30vh;
     object-fit: contain;
 }
 
 .foto img{
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
 }
 
 .area h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 5%;
+    text-align: justify;
+    color: #ffff;
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+footer{
+    flex-direction: row;
     width: 100%;
+    height: 15vh;
+    background-color: #44a1a0;
+
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoalt{
+    height: 10vh;
+    width: 30%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 12vh;
+    width: 40%;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+
+    margin-right: 5%;
+    height: 3vh;
+    width: 20%;
+}
+
+.dev{
+    flex-direction: row;
+    align-self: flex-end;
+    align-items: last baseline;
+
+    width: fit-content;
+    height: 5vh;
+    margin-top: 5%;
+    margin-right: 5%;
+
+    text-align: start;
+    color: #ffff;
+    font-size: small;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.dev h1{
+    color: #ffff;
+    font-weight: lighter;
 }
