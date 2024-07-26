@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .cabesalho{
     flex-direction: row;
     width: 100%;
@@ -325,4 +329,50 @@ footer{
 .dev h1{
     color: #ffff;
     font-weight: lighter;
+}
+
+.biologia{
+    width: 80%;
+    display: flex;
+
+    align-self: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-left: 10%;
+    background-color: #44a1a0;
+}
+
+.celula{
+    width: 50%;
+    height: 100vh;
+    
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #2C4141;
+}
+
+.celula img{
+    object-fit: none;
+}
+
+#corpo{
+    height: 300px;
+    object-fit: contain;
+}
+
+#nucleo{
+    height: 80px;
+    object-fit: contain;
+    position: relative;
+    bottom: 100px;
+    left: 10px;
+}
+
+.elementos{
+    width: 100%;
+
 }
