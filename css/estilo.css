@@ -478,8 +478,56 @@ footer{
     height: 30px;
     object-fit: contain;
     position: relative;
-    bottom: 880px;
-    left: 270px; 
+    bottom: 870px;
+    left: 260px; 
+}
+
+#nome3{
+    height: 70px;
+    object-fit: contain;
+    position: relative;
+    bottom: 860px;
+    left: 250px; 
+}
+
+#nome4{
+    height: 25px;
+    object-fit: contain;
+    position: relative;
+    bottom: 1068px;
+    right: 272px;
+}
+
+#nome5{
+    height: 30px;
+    object-fit: contain;
+    position: relative;
+    bottom: 1190px;
+    left: 288px; 
+}
+
+#nome6{
+    height: 130px;
+    object-fit: contain;
+    position: relative;
+    bottom: 1060px;
+    right: 265px;
+}
+
+#nome7{
+    height: 50px;
+    object-fit: contain;
+    position: relative;
+    bottom: 1230px;
+    left: 240px; 
+}
+
+#nome8{
+    height: 30px;
+    object-fit: contain;
+    position: relative;
+    bottom: 1330px;
+    left: 210px; 
 }
 
 #nome1 ::hover{
