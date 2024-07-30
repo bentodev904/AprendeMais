@@ -343,15 +343,13 @@ footer{
 }
 
 .celula{
-    width: 1000px;
-    height: 50vh;
+    width: 80%;
+    height: 40vh;
     
     display: flex;
     align-self: center;
     align-items: center;
     flex-direction: column;
-
-    background-color: #2C4141;
 }
 
 .celula img{
@@ -470,6 +468,7 @@ footer{
     height: 50px;
     object-fit: contain;
     position: relative;
+    opacity: 0.5;
     bottom: 1000px;
     right: 254px; 
 }
@@ -479,6 +478,7 @@ footer{
     object-fit: contain;
     position: relative;
     bottom: 870px;
+    opacity: 0.5;
     left: 260px; 
 }
 
@@ -487,6 +487,7 @@ footer{
     object-fit: contain;
     position: relative;
     bottom: 860px;
+    opacity: 0.5;
     left: 250px; 
 }
 
@@ -495,6 +496,7 @@ footer{
     object-fit: contain;
     position: relative;
     bottom: 1068px;
+    opacity: 0.5;
     right: 272px;
 }
 
@@ -503,6 +505,7 @@ footer{
     object-fit: contain;
     position: relative;
     bottom: 1190px;
+    opacity: 0.5;
     left: 288px; 
 }
 
@@ -511,6 +514,7 @@ footer{
     object-fit: contain;
     position: relative;
     bottom: 1060px;
+    opacity: 0.5;
     right: 265px;
 }
 
@@ -519,22 +523,65 @@ footer{
     object-fit: contain;
     position: relative;
     bottom: 1230px;
-    left: 240px; 
+    left: 240px;
+    opacity: 0.5;
 }
 
 #nome8{
     height: 30px;
+    opacity: 0.5;
     object-fit: contain;
     position: relative;
     bottom: 1330px;
     left: 210px; 
 }
 
-#nome1 ::hover{
-    color: aliceblue;
+#nome1:hover{
+    opacity:1
+}
+
+#nome2:hover{
+    opacity:1
+}
+
+#nome3:hover{
+    opacity:1
+}
+
+#nome4:hover{
+    opacity:1
+}
+
+#nome5:hover{
+    opacity:1
+}
+
+#nome6:hover{
+    opacity:1
+}
+
+#nome7:hover{
+    opacity:1
+}
+
+#nome8:hover{
+    opacity:1
 }
 
 .elementos{
-    width: 100%;
+    width: 80%;
 
+    display:flex;
+    flex-flow: column wrap;
+}
+
+.elementos strong{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    color: #44a1a0;
+}
+
+.elementos a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
 }
