@@ -100,7 +100,7 @@ img{
 
     color: #2C4141;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 100%;
+    font-size: 200%;
     font-weight: 400;
 }
 
@@ -157,7 +157,7 @@ img{
 
 .texts h1{
     color: #2B4141;
-    font-size: xx-large;
+    font-size: 200%;
     font-weight: 600;
 }
 
@@ -174,6 +174,7 @@ img{
     align-items: flex-end;
 
     margin-top: 1vh;
+    margin-bottom: 10vh;
     height: fit-content;
     width: 90%;
 }
@@ -278,7 +279,7 @@ footer{
     height: 15vh;
     background-color: #44a1a0;
 
-    margin-top: 2%;
+    margin-top: 40vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -350,10 +351,6 @@ footer{
     align-self: center;
     align-items: center;
     flex-direction: column;
-}
-
-.celula img{
-    object-fit: none;
 }
 
 #corpo{
@@ -573,15 +570,16 @@ footer{
 
     display:flex;
     flex-flow: column wrap;
+    margin-top: 5vh;
 }
 
 .elementos strong{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: xx-large;
+    font-size: 200%;
     color: #44a1a0;
 }
 
 .elementos a{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: large;
+    font-size: 150%;
 }
