@@ -583,3 +583,41 @@ footer{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 150%;
 }
+
+.nome{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    width: 100%;
+}
+
+.nome input{
+    border: 2px solid #44a1a0;
+    width: 80%;
+    height: 30px;
+    font-size: small;
+    border-radius: 4px;
+}
+
+.questoes{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.questao{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+https://www.todamateria.com.br/exercicios-sobre-agua/
