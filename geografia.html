@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/estilo.css" type="text/css" rel="stylesheet">
     <title>Document</title>
+    <script type="text/javascript" src="contaacerto.js"></script> <!--chama o script de contar acertos-->
 </head>
 <body>
 
@@ -39,30 +40,49 @@
     </div>
 
     <div class="questoes">
-        <div class="questao">
-            <h1>1. A água é um recurso natural indispensável para a manutenção da vida na Terra. Sobre esse elemento essencial é correto afirmar que:</h1>
-            <input type="radio" name="resposta">
-            <label for="resposta">A água é um recurso abundante e que qualquer tipo pode facilmente ser tratado para consumo.</label>
-            <input type="radio" name="resposta">
-            <label for="resposta">A água própria para o consumo é um recurso hídrico limitado.</label> 
-            <br>
-            <input type="radio" name="resposta">
-            <label for="resposta">A maior parte da água do planeta pode ser utilizada e, por isso, não há com o que se preocupar.</label>
-            <input type="radio" name="resposta">
-            <label for="resposta">A água doce está presente apenas em regiões superfícies do planeta, na forma de lagos, rios e geleiras.</label> 
-        </div>
-        <div class="questao">
-            <h1>1. Enunciado da questão 1</h1>
-            <input type="radio" name="resposta">
-            <label for="resposta">Resposta 1</label>
-            <input type="radio" name="resposta">
-            <label for="resposta">Resposta 3</label> 
-            <br>
-            <input type="radio" name="resposta">
-            <label for="resposta">Resposta 2</label>
-            <input type="radio" name="resposta">
-            <label for="resposta">Resposta 4</label> 
-        </div>
+        <form class="questao">
+            <h1>1. O que importa é que os geógrafos conceberam, na construção da Geografia, uma análise de conjunção do natural e do humano, transformando o ___________________ em um conceito que expressa a articulação natureza e sociedade, ou seja, constituíram um objeto de interface entre as ciências naturais e as ciências sociais.</h1>
+            <div class="resposta1">
+            <input type="radio" name="resposta" value="true" onclick="receba()">
+            <label for="resposta">espaço geográfico.</label>
+            </div>
+            <div class="resposta2">
+            <input type="radio" name="resposta" value="false" onclick="receba()" />
+            <label for="resposta">lugar.</label>
+            </div>
+            <div class="resposta3">
+            <input type="radio" name="resposta" value="false" onclick="receba()" />
+            <label for="resposta">paisagem.</label>
+            </div>
+            <div class="resposta4">
+            <input type="radio" name="resposta" value="false" onclick="receba()"/>
+            <label for="resposta">região.</label> 
+            </div>
+        </form>
+        <form class="questao">
+            <h1>2. O conceito de espaço geográfico varia conforme a abordagem realizada. Mas, em geral, refere-se à materialização da relação entre o homem e o meio. PENA, Rodolfo F. Alves. "Espaço Geográfico"; Brasil Escola. Disponível em: https://brasilescola.uol.com.br/geografia/espaco-geografico.htm. Acesso em 6 de fevereiro de 2021. A partir da informação acima, pode-se afirmar que o espaço geográfico é o objeto de estudo de qual ciência?</h1>
+            <div class="resposta1">
+            <input type="radio" name="resposta" value="false" onclick="receba()">
+            <label for="resposta">Climatologia.</label>
+            </div>
+            <div class="resposta2">
+            <input type="radio" name="resposta" value="false" onclick="receba()"/>
+            <label for="resposta">Geologia.</label>
+            </div>
+            <div class="resposta3">
+            <input type="radio" name="resposta" value="false" onclick="receba()"/>
+            <label for="resposta">Geomorfologia.</label>
+            </div>
+            <div class="resposta4">
+            <input type="radio" name="resposta" value="true" onclick="receba()"/>
+            <label for="resposta">Geografia.</label> 
+            </div>
+        </form>
+    </div>
+    
+    <div class="enviar">
+        <span>enviar</span>
+        <input type="button" name="envio" onclick="mostra()">
     </div>
 
     <footer>

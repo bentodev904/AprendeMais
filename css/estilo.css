@@ -607,17 +607,68 @@ footer{
     display: flex;
     align-self: center;
     flex-direction: row;
+    justify-self: center;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 100%;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: #44a1a0;
+    margin-left: 10%;
+    margin-top: 20px;
 }
 
 .questao{
     display: flex;
-    align-self: center;
-    flex-direction: column;
-    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    width: 40%;
+    font-size: medium;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    background-color: #2B4141;
 }
 
-https://www.todamateria.com.br/exercicios-sobre-agua/
+.questao h1{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #44a1a0;
+}
+
+.resposta1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: 45%;
+    background-color: #E4572E;
+}
+
+.resposta2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    flex-flow: row;
+
+    width: 45%;
+}
+
+
+.resposta3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: 45%;
+    background-color: #E4572E;
+}
+
+
+.resposta4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: 45%;
+}
