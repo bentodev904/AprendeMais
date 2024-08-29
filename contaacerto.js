@@ -1,17 +1,17 @@
 try{
     var acertos = 0;
     var erros = 0;
+    var values = []
     function receba(){
-        var radios = document.querySelector("input[name='resposta']:checked").value
-        if (radios == "true"){
+        const radios = document.querySelector("input[name='resposta']:checked")
+        if (radios.value === "true"){
             acertos++
-        } else if (radios == "false"){
-            erros++
         }
-    }
-    function mostra(){
-        console.log(acertos);
+        console.log(acertos)
     }   
+    function mostra(){
+        alert(acertos, "skividio")
+    }
 } catch(error) {
     console.log("O nome do erro é: ${erro.name}\n");
     console.log("A mensagem do erro é: ${erro.message}\n");
