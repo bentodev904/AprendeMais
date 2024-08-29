@@ -1,16 +1,19 @@
 try{
     var acertos = 0;
-    var erros = 0;
-    var values = []
-    function receba(){
-        const radios = document.querySelector("input[name='resposta']:checked")
-        if (radios.value === "true"){
-            acertos++
-        }
-        console.log(acertos)
-    }   
     function mostra(){
-        alert(acertos, "skividio")
+        var radios = document.getElementsByName('resposta');
+        var radios_value;
+        for(var i = 0; i < radios.length; i++){
+            if(radios[i].checked){
+                radios_value = radios[i].value;
+                if(radios_value == "true"){
+                    acertos++
+                }
+            }
+        }
+        var x = document.getElementById("resultados")
+        var y = document.getElementById("nombr").value
+        x.innerHTML += "Parabéns "+y+"! Você acertou "+acertos+" questões"
     }
 } catch(error) {
     console.log("O nome do erro é: ${erro.name}\n");

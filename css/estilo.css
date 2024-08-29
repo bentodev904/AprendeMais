@@ -298,7 +298,7 @@ footer{
     justify-content: center;
 
     height: 12vh;
-    width: 40%;
+    width: 30%;
 }
 
 .socials{
@@ -611,7 +611,6 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 80%;
-    background-color: #44a1a0;
     margin-left: 10%;
     margin-top: 20px;
 }
@@ -622,17 +621,15 @@ footer{
     justify-content: space-between;
     align-self: flex-start;
     flex-wrap: wrap;
-    width: 40%;
-    font-size: medium;
+    width: 45%;
+    font-size: x-large;
     margin-bottom: 20px;
     margin-top: 20px;
     word-break: break-all;
     font-family:Arial, Helvetica, sans-serif;
-
-    background-color: #2B4141;
 }
 
-.questao h1{
+.questao h2{
     color: #44a1a0;
 }
 
@@ -642,7 +639,6 @@ footer{
     flex-wrap: nowrap;
 
     width: 45%;
-    background-color: #E4572E;
 }
 
 .resposta2{
@@ -662,7 +658,6 @@ footer{
     flex-wrap: nowrap;
 
     width: 45%;
-    background-color: #E4572E;
 }
 
 
@@ -672,4 +667,46 @@ footer{
     flex-wrap: nowrap;
 
     width: 45%;
+}
+
+.enviar{
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-end;
+
+
+    
+    width: 100%;
+    height: 10vh;
+}
+
+.botao{
+    display: flex;
+    justify-self: flex-start;
+
+    width: 35%;
+    height: 100%;
+}
+
+.botao input{
+    width: 100%;
+    background-color: #44a1a0;
+    border: none;
+    border-radius: 10px;
+    font-size: 300%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ffff;
+    font-weight: 500;
+}
+
+.resultados h1{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #44a1a0;
+    font-weight: 1000;
+}
+
+.resultados p{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #44a1a0;
+    font-size: 80px;
 }

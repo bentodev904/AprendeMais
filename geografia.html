@@ -36,53 +36,215 @@
     </div>
 
     <div class="nome">
-        <input type="text" name="nombr" placeholder="Digite seu nome aqui">
+        <input type="text" id="nombr" placeholder="Digite seu nome aqui">
     </div>
 
     <div class="questoes">
         <form class="questao">
-            <h1>1. Qual é a capital do Acre?</h1>
+            <h2>1. Qual das alternativas abaixo indica a melhor definição de bacia hidrográfica:</h2>
             <div class="resposta1">
-            <input type="radio" name="resposta" value="true" onclick="receba()"/>
-            <label for="resposta">Rio Branco</label>
+            <input type="radio" name="resposta" value="false"/>
+             É a região hidrográfica baseada na presença somente de cursos de água de grande magnitude.
             </div>
             <div class="resposta2">
-            <input type="radio" name="resposta" value="false" onclick="receba()"/>
-            <label for="resposta">Amazonia</label>
+            <input type="radio" name="resposta" value="true"/>
+            É a unidade espacial delimitada pelo relevo e pela rede hidrográfica atrelada ao rio principal.
             </div>
             <div class="resposta3">
-            <input type="radio" name="resposta" value="false" onclick="receba()"/>
-            <label for="resposta">paisagem.</label>
+            <input type="radio" name="resposta" value="false"/>
+            É a localidade de nascente de um curso de água que deságua em uma outra rede hidrográfica.
             </div>
             <div class="resposta4">
-            <input type="radio" name="resposta" value="false" onclick="receba()"/>
-            <label for="resposta">região.</label> 
+            <input type="radio" name="resposta" value="false"/>
+             É o espaço formado por rios que possuem características em comum e que são intermitentes. 
             </div>
         </form>
         <form class="questao">
-            <h1>1. Qual é a capital do Acre?</h1>
+            <h2>2. Qual a maior bacia hidrográfica que se encontra parcialmente localizada no território brasileiro?</h2>
             <div class="resposta1">
-            <input type="radio" name="resposta" value="true" onclick="receba()"/>
-            <label for="resposta">Rio Branco</label>
+            <input type="radio" name="resposta" value="true"/>
+            Bacia hidrográfica do Amazonas
             </div>
             <div class="resposta2">
-            <input type="radio" name="resposta" value="false" onclick="receba()"/>
-            <label for="resposta">Amazonia</label>
+            <input type="radio" name="resposta" value="false"/>
+            Bacia hidrográfica do São Francisco
             </div>
             <div class="resposta3">
-            <input type="radio" name="resposta" value="false" onclick="receba()"/>
-            <label for="resposta">paisagem.</label>
+            <input type="radio" name="resposta" value="false"/>
+            Bacia hidrográfica do Atlântico Leste
             </div>
             <div class="resposta4">
-            <input type="radio" name="resposta" value="false" onclick="receba()"/>
-            <label for="resposta">região.</label> 
+            <input type="radio" name="resposta" value="false"/>
+            Bacia hidrográfica do Paraguai 
             </div>
         </form>
-    </div>
-    
-    <div class="enviar">
-        <span>enviar</span>
-        <input type="button" name="envio" onclick="mostra()">
+        <form class="questao">
+            <h2>3. Os estados brasileiros abaixo possuem parte do seu território na bacia hidrográfica do Tocantins-Araguaia, com exceção de</h2>
+            <div class="resposta1">
+            <input type="radio" name="resposta" value="false"/>
+            Maranhão.
+            </div>
+            <div class="resposta2">
+            <input type="radio" name="resposta" value="false"/>
+            Tocantins.
+            </div>
+            <div class="resposta3">
+            <input type="radio" name="resposta" value="false"/>
+            Mato Grosso.
+            </div>
+            <div class="resposta4">
+            <input type="radio" name="resposta" value="true"/>
+            São Paulo. 
+            </div>
+        </form>
+        <form class="questao">
+            <h2>4. Qual a bacia hidrográfica brasileira com menor disponibilidade hídrica?</h2>
+            <div class="resposta1">
+            <input type="radio" name="resposta" value="false"/>
+            Bacia hidrográfica do Amazonas
+            </div>
+            <div class="resposta2">
+            <input type="radio" name="resposta" value="false"/>
+            Bacia hidrográfica do Tocantins-Araguaia
+            </div>
+            <div class="resposta3">
+            <input type="radio" name="resposta" value="true"/>
+            Bacia hidrográfica do Atlântico Nordeste Oriental
+            </div>
+            <div class="resposta4">
+            <input type="radio" name="resposta" value="false"/>
+            Bacia hidrográfica do Atlântico-Leste 
+            </div>
+        </form>
+        <form class="questao">
+            <h2>5. São pontos importantes atrelados à bacia Platina, com exceção da</h2>
+            <div class="resposta1">
+            <input type="radio" name="resposta" value="false"/>
+            utilização de fontes de água para a produção pecuária.
+            </div>
+            <div class="resposta2">
+            <input type="radio" name="resposta" value="false"/>
+            cultivação de plantações irrigadas com a água dos rios.
+            </div>
+            <div class="resposta3">
+            <input type="radio" name="resposta" value="true"/>
+            canalização da água para resfriamento de usinas nucleares.
+            </div>
+            <div class="resposta4">
+            <input type="radio" name="resposta" value="false"/>
+            oferta de água para o abastecimento de grandes cidades. 
+            </div>
+        </form>
+        <form class="questao">
+            <h2>6. O rio São Francisco, assim como a sua respectiva bacia hidrográfica, possui grande importância, especialmente para a região geográfica brasileira</h2>
+            <div class="resposta1">
+            <input type="radio" name="resposta" value="false"/>
+            Sul.
+            </div>
+            <div class="resposta2">
+            <input type="radio" name="resposta" value="true"/>
+            Nordeste.
+            </div>
+            <div class="resposta3">
+            <input type="radio" name="resposta" value="false"/>
+            Centro-Oeste.
+            </div>
+            <div class="resposta4">
+            <input type="radio" name="resposta" value="false"/>
+            Sudeste. 
+            </div>
+        </form>
+        <form class="questao">
+            <h2>7. A maior laguna do Brasil, conhecida pelo nome de lagoa dos Patos, está inserida espacialmente na bacia hidrográfica</h2>
+            <div class="resposta1">
+            <input type="radio" name="resposta" value="false"/>
+            Paraná.
+            </div>
+            <div class="resposta2">
+            <input type="radio" name="resposta" value="true"/>
+            Atlântico Sul.
+            </div>
+            <div class="resposta3">
+            <input type="radio" name="resposta" value="false"/>
+            Atlântico Leste.
+            </div>
+            <div class="resposta4">
+            <input type="radio" name="resposta" value="false"/>
+            Amazonas. 
+            </div>
+        </form>
+        <form class="questao">
+            <h2>8. Qual a maior bacia hidrográfica localizada totalmente no território brasileiro?</h2>
+            <div class="resposta1">
+            <input type="radio" name="resposta" value="false"/>
+            Bacia hidrográfica do Platina
+            </div>
+            <div class="resposta2">
+            <input type="radio" name="resposta" value="false"/>
+            Bacia hidrográfica do Atlântico Leste
+            </div>
+            <div class="resposta3">
+            <input type="radio" name="resposta" value="true"/>
+            Bacia hidrográfica do Tocantins-Araguaia
+            </div>
+            <div class="resposta4">
+            <input type="radio" name="resposta" value="false"/>
+            Bacia hidrográfica do Atlântico Sul 
+            </div>
+        </form>
+        <form class="questao">
+            <h2>9. (Unesp 2018) Qual é a dinâmica pela qual evolui a rede de rios? O sistema evolui espontaneamente para o estado mais conveniente, de energia mínima, impulsionado por fluxos de água e energia vindos de tempestades, avalanches e transporte de sedimentos. Trata-se de um processo de auto-organização da paisagem.
+
+                <br>Nelson B. Peixoto. “O rio, a inundação e a cidade”. In: Revista Estudos Avançados, n° 91, setembro/dezembro de 2017.<br>
+                
+                Um exemplo de auto-organização da paisagem natural relacionada aos rios é</h2>
+            <div class="resposta1">
+            <input type="radio" name="resposta" value="false"/>
+            a retificação dos cursos d’água.
+            </div>
+            <div class="resposta2">
+            <input type="radio" name="resposta" value="false"/>
+            a epirogênese de materiais.
+            </div>
+            <div class="resposta3">
+            <input type="radio" name="resposta" value="false"/>
+            o escoamento laminar.
+            </div>
+            <div class="resposta4">
+            <input type="radio" name="resposta" value="true"/>
+            a formação de padrões meândricos. 
+            </div>
+        </form>
+        <form class="questao">
+            <h2>10. (Unicentro) O Brasil possui uma grande quantidade de rios, o que proporciona um grande potencial hidrelétrico. Assinale a alternativa correta que corresponde a quais fatores geográficos favorecem a instalação deste potencial.</h2>
+            <div class="resposta1">
+            <input type="radio" name="resposta" value="false"/>
+            A latitude e a monotonia do relevo.
+            </div>
+            <div class="resposta2">
+            <input type="radio" name="resposta" value="true"/>
+            As condições climáticas e o relevo acidentado.
+            </div>
+            <div class="resposta3">
+            <input type="radio" name="resposta" value="false"/>
+            A continentalidade do território e a disposição longitudinal do seu relevo.
+            </div>
+            <div class="resposta4">
+            <input type="radio" name="resposta" value="false"/>
+            A predominância no país do clima equatorial e a existência de poucas áreas planas. 
+            </div>
+        </form>
+        <div class="enviar">
+            <div class="botao">
+                <input type="button" name="envio" onclick="mostra()" value="ENVIAR RESPOSTAS">
+            </div>
+        </div>
+        <div class="resultados">
+            <h1>RESULTADO</h1>
+            <p id="resultados">
+
+            </p>
+        </div>
     </div>
 
     <footer>
