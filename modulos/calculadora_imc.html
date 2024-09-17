@@ -42,9 +42,9 @@
     <div class="form">
         <form class="calculadora">
             <input type="text" id="name" placeholder="Insira o Nome">
-            <input type="number" id="peso" placeholder="Insira o Peso">
-            <input type="number" id="altura" placeholder="Insira a Altura">
-            <button type="submit">Calcular</button>
+            <input type="number" id="peso" placeholder="Insira o Peso (em kg)">
+            <input type="number" id="altura" placeholder="Insira a Altura (em cm)">
+            <button type="submit" onclick="imc(document.getElementById('name').value,document.getElementById('peso').value,document.getElementById('altura').value)">Calcular</button>
         </form>
         <div class="resultado">
             <p id="imc">

@@ -771,3 +771,6 @@ footer{
     background-color:transparent;
     border: transparent;
 }
+#all{
+    display:block;
+}

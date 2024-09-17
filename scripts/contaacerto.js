@@ -20,7 +20,7 @@ try{
         x.innerHTML += "Parabéns "+y+"! Você acertou "+acertos+" questões"
         cont++
     }
-} catch(error) {
+} catch(erro) {
     console.log(`O nome do erro é: ${erro.name}\n`);
     console.log(`A mensagem do erro é: ${erro.message}\n`);
     console.log(`A stack do erro é: ${erro.stack}\n`);

@@ -1,6 +1,6 @@
-function troca(x) {
-    if (x === 1) {
-        alert('la ele')
-        document.getElementById("b1").style = "display:none;"
+function troca(container) {
+    if (container == 1) {
+        document.getElementById("all").style = "display:none;"
+        document.getElementById("imc").style = "display:block;"
     }
 }

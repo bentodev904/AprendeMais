@@ -7,7 +7,7 @@ try{
         }
         x.innerHTML = "Quantidade de Números Solicitados: "+qtonum+"<br>"+"Números Sorteados: "+sorteado
     }
-}catch(error){
+}catch(erro){
     console.log(`O nome do erro é: ${erro.name}\n`);
     console.log(`A mensagem do erro é: ${erro.message}\n`);
     console.log(`A stack do erro é: ${erro.stack}\n`);

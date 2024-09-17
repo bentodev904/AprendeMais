@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/estilo.css" type="text/css" rel="stylesheet">
-    <script src="matematica.js" type="text/javascript"></script>
+    <script src="../scripts/matematica.js" type="text/javascript"></script>
     <title>Matematica</title>
 </head>
 
@@ -31,30 +31,58 @@
             </div>
         </div>
     </div>
+    <div id="all">
+        <div class="line">
+            <span> Matemática </span>
+            <hr>
+        </div>
 
+        <div class="descricao">
+            <p>Nesta área você encontra modelos de calculadoras, conversores, sorteador de números aleatórios, etc.
+                Fique a
+                vontade para usar da melhor forma cada função!</p>
+        </div>
+
+        <div class="matematicas">
+            <button class="botaopoggers" onclick="troca(1)" id="b1">
+                <div class="bloco"><span>CALCULADORA DE IMC</span></div>
+            </button>
+            <button class="botaopoggers" onclick="troca(2)" id="b2">
+                <div class="bloco" style="background-color: gray;"><span>CONVERSOR DE MOEDAS</span></div>
+            </button>
+            <button class="botaopoggers" onclick="troca(3)" id="b3">
+                <div class="bloco" style="background-color: gray;"><span>GASTOS COM COMBUSTÍVEL</span></div>
+            </button>
+            <button class="botaopoggers" onclick="troca(4)" id="b4">
+                <div class="bloco"><span>SORTEADOR DE NÚMEROS</span></div>
+            </button>
+        </div>
+    </div>
+    <!-- divs importantes do IMC, Conversor, Gastos e Sorteador -->
+    <div id="imc" style="display:none;">
     <div class="line">
-        <span> Matemática </span>
+        <span> Calcular IMC </span>
         <hr>
     </div>
 
-    <div class="descricao">
-        <p>Nesta área você encontra modelos de calculadoras, conversores, sorteador de números aleatórios, etc. Fique a
-            vontade para usar da melhor forma cada função!</p>
-    </div>
+    
+        <div class="descricao">
+            <p>Aqui você consegue calcular seu IMC com base no seu peso e altura!</p>
+        </div>
 
-    <div class="matematicas">
-        <button class="botaopoggers" onclick="troca(1)" id="b1">
-            <div class="bloco"><span>CALCULADORA DE IMC</span></div>
-        </button>
-        <button class="botaopoggers" onclick="troca(2)" id="b2">
-            <div class="bloco" style="background-color: gray;"><span>CONVERSOR DE MOEDAS</span></div>
-        </button>
-        <button class="botaopoggers" onclick="troca(3)" id="b3">
-            <div class="bloco" style="background-color: gray;"><span>GASTOS COM COMBUSTÍVEL</span></div>
-        </button>
-        <button class="botaopoggers" onclick="troca(4)" id="b4">
-            <div class="bloco"><span>SORTEADOR DE NÚMEROS</span></div>
-        </button>
+        <div class="form" id="imc">
+            <form class="calculadora">
+                <input type="text" id="name" placeholder="Insira o Nome">
+                <input type="number" id="peso" placeholder="Insira o Peso (em kg)">
+                <input type="number" id="altura" placeholder="Insira a Altura (em cm)">
+                <button type="submit"
+                    onclick="imc(document.getElementById('name').value,document.getElementById('peso').value,document.getElementById('altura').value)">Calcular</button>
+            </form>
+            <div class="resultado">
+                <p id="imcfinal">
+                </p>
+            </div>
+        </div>
     </div>
 
     <footer>
