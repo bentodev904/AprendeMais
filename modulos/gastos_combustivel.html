@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+    <script type="text/javascript" src="contaacerto.js"></script> <!--chama o script de contar acertos-->
+</head>
+<body>
+
+    <div class="cabesalho">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="navega">
+            <div class="icones">
+                <img src="../img/search.png" alt="lupa">
+                <img src="../img/user.png" alt="user">
+            </div>
+            <div class="menu">
+                <a href="../index.html"><span> Início </span></a>
+                |
+                <span> Categorias </span>
+                |
+                <span> Áreas do Conhecimento </span>
+                |
+                <span> Ajuda </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="line">
+        <span> Calcular IMC </span>
+        <hr>
+    </div>
+
+    <div class="descricao">
+        <p>Aqui você consegue calcular seu IMC com base no seu peso e altura!</p>
+    </div>
+
+    <form class="calculadora">
+        <input type="text" id="start" placeholder="Insira a Origem">
+        <input type="text" id="end" placeholder="Insira o Destino">
+        <input type="number" id="km" placeholder="Insira a Distância">
+        <input type="number" id="gas" placeholder="Insira quantos km por litro o veículo faz">
+        <input type="number" id="gasol" placeholder="Insira o valor médio do lito de combustível">
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div class="resultado">
+        <p id="gastotal">
+            Campos Necessários: Origem, Destino, Distância (em km), Quantos km
+            por litro o veículo faz, Valor Médio do Combustível, botão de Calcular.
+            Ao clicar em calcular, deverá ser calculado a quantidade de
+            combustível que o carro gastará na viagem e o valor que o usuário
+            pagará para se deslocar de viagem.
+            Exemplo de Mensagem Final: Você precisará de XX litros de combustível
+            e gastará R$ XXX para se deslocar de XXX para XXX
+        </p>
+    </div>
+    
+    <footer>
+        <div class="logoalt">
+            <img src="../img/logo.png" alt="logo"> 
+        </div>
+        <div class="info">
+            <div class="socials">
+                <img src="../img/fb.png"/>
+                <img src="../img/instagram.png"/>
+                <img src="../img/youtube.png"/>
+                <img src="../img/twitter.png"/>
+            </div>
+            <div class="dev">
+            <h1> Desenvolvido por IFMS - Campus Dourados</h1>
+        </div>
+    </footer>
+
+</body>
+</html>

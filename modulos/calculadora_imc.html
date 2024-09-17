@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+    <script type="text/javascript" src="contaacerto.js"></script> <!--chama o script de contar acertos-->
+</head>
+<body>
+
+    <div class="cabesalho">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="navega">
+            <div class="icones">
+                <img src="../img/search.png" alt="lupa">
+                <img src="../img/user.png" alt="user">
+            </div>
+            <div class="menu">
+                <a href="../index.html"><span> Início </span></a>
+                |
+                <span> Categorias </span>
+                |
+                <span> Áreas do Conhecimento </span>
+                |
+                <span> Ajuda </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="line">
+        <span> Calcular IMC </span>
+        <hr>
+    </div>
+
+    <div class="descricao">
+        <p>Aqui você consegue calcular seu IMC com base no seu peso e altura!</p>
+    </div>
+
+    <div class="form">
+        <form class="calculadora">
+            <input type="text" id="name" placeholder="Insira o Nome">
+            <input type="number" id="peso" placeholder="Insira o Peso">
+            <input type="number" id="altura" placeholder="Insira a Altura">
+            <button type="submit">Calcular</button>
+        </form>
+        <div class="resultado">
+            <p id="imc">
+                Ao clicar em calcular deverá ser calculado o IMC do usuário e mostrado
+                em alguma área da página sua categoria de acordo com o resultado,
+                sendo:
+                • Abaixo do peso: IMC < 18.5
+                • Normal: 18.5 ≤ IMC < 24.9
+                • Sobrepeso: 25 ≤ IMC < 29.9
+                • Obesidade: IMC ≥ 30
+                Exemplo de Mensagem Final: José da Silva, seu IMC é de XXX e você está
+                classificado na categoria XXX
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="logoalt">
+            <img src="../img/logo.png" alt="logo"> 
+        </div>
+        <div class="info">
+            <div class="socials">
+                <img src="../img/fb.png"/>
+                <img src="../img/instagram.png"/>
+                <img src="../img/youtube.png"/>
+                <img src="../img/twitter.png"/>
+            </div>
+            <div class="dev">
+            <h1> Desenvolvido por IFMS - Campus Dourados</h1>
+        </div>
+    </footer>
+
+</body>
+</html>

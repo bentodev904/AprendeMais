@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" type="text/css" rel="stylesheet">
+    <title>Sorteador de Números</title>
+    <script type="text/javascript" src="../scripts/sortear.js"></script> <!--chama o script de contar acertos-->
+</head>
+<body>
+
+    <div class="cabesalho">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="navega">
+            <div class="icones">
+                <img src="../img/search.png" alt="lupa">
+                <img src="../img/user.png" alt="user">
+            </div>
+            <div class="menu">
+                <a href="../index.html"><span> Início </span></a>
+                |
+                <span> Categorias </span>
+                |
+                <span> Áreas do Conhecimento </span>
+                |
+                <span> Ajuda </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="line">
+        <span> Sortear Números </span>
+        <hr>
+    </div>
+
+    <div class="descricao">
+        <p>Aqui você consegue realizar um sorteio!</p>
+    </div>
+
+    <form class="calculadora">
+        <input type="number" id="vi" placeholder="Insira o menor valor possível">
+        <input type="number" id="vf" placeholder="Insira o maior valor possível">
+        <input type="number" id="qtonum" placeholder="Insira a quantidade de numeros">
+        <button type="submit" onclick="sorteio(document.getElementById('vi').value,document.getElementById('vf').value,document.getElementById('qtonum').value)">Sortear</button>
+    </form>
+
+    <div class="resultado">
+        <p id="jackpot">
+            Campos Necessários: Valor inicial possível de ser sorteado, Valor final
+            possível de ser sorteado, Quantidade de números a serem sorteados,
+            botão de sortear.
+            Ao clicar em sortear, você deverá realizar o sorteio de X (quantidade
+            digitada) números aleatórios entre o valor inicial digitado e o valor final.
+            Sugestão: Utilize a função abaixo para realização do sorteio de um
+            número:
+            Math.floor(Math.random() * (max - min + 1)) + min
+            Onde max é o valor final possível de ser sorteado e min o valor mínimo
+            possível.
+            Exemplo de Mensagem Final: Quantidade de Números Solicitados: XXX -
+            Números Sorteados: XXX – XXX - ... – XXX
+        </p>
+    </div>
+    
+    <footer>
+        <div class="logoalt">
+            <img src="../img/logo.png" alt="logo"> 
+        </div>
+        <div class="info">
+            <div class="socials">
+                <img src="../img/fb.png"/>
+                <img src="../img/instagram.png"/>
+                <img src="../img/youtube.png"/>
+                <img src="../img/twitter.png"/>
+            </div>
+            <div class="dev">
+            <h1> Desenvolvido por IFMS - Campus Dourados</h1>
+        </div>
+    </footer>
+
+</body>
+</html>
