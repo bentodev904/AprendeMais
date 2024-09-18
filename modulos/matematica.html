@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/estilo.css" type="text/css" rel="stylesheet">
     <script src="../scripts/matematica.js" type="text/javascript"></script>
+    <script src="../scripts/calculoimc.js" type="text/javascript"></script>
+    <script src="../scripts/sortear.js" type="text/javascript"></script>
+    <script src="../scripts/moedas.js" type="text/javascript"></script>
     <title>Matematica</title>
 </head>
 
@@ -80,6 +83,100 @@
             </form>
             <div class="resultado">
                 <p id="imcfinal">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="conversor" style="display:none;">
+        <div class="line">
+            <span> Conversor de Moedas </span>
+            <hr>
+        </div>
+
+        <div class="descricao">
+            <p>Aqui você consegue converter moedas!</p>
+        </div>
+
+        <div class="form">
+            <form class="moeda">  
+                <input type="radio" name="cruzeiro"/>
+                <label for="cruzeiro">Cruzeiro</label>
+                <input type="radio" name="kwanza"/>
+                <label for="kwanza">Kwanza</label>
+                <input type="radio" name="dogecoin"/>
+                <label for="dogecoin">Doge Coin</label>
+                <input  type="/>
+                <button type="submit" onclick="conv(document.getElementsByName(''))">Calcular</button>
+            </form>
+            <div class="resultado">
+                <p id="conversao">
+                    Campos Necessários: Moeda Base (3 opções – Ex: Real, Dólar, Euro),
+                    Moeda a ser Convertido (3 opções – Ex: Franco, Peso, Dólar), Valor a ser
+                    convertido, botão de Calcular.
+                    Ao clicar em calcular, deverá ser convertido o valor digitado para a
+                    moeda informada. Verifique a cotação próximo ao valor real para
+                    realizar as conversões.
+                    Exemplo de Mensagem Final: O valor XXX convertido de XXX para XXX é
+                    de XXX
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="gastar" style="display:none;">
+        <div class="line">
+            <span> Gastos com Combustível </span>
+            <hr>
+        </div>
+
+        <div class="descricao">
+            <p>Aqui você consegue calcular seus gastos com combustível!</p>
+        </div>
+
+        <div class="form">
+            <form class="calculadora">
+                <input type="text" id="start" placeholder="Insira a Origem">
+                <input type="text" id="end" placeholder="Insira o Destino">
+                <input type="number" id="km" placeholder="Insira a Distância">
+                <input type="number" id="gas" placeholder="Insira quantos km por litro o veículo faz">
+                <input type="number" id="gasol" placeholder="Insira o valor médio do lito de combustível">
+                <button type="submit">Calcular</button>
+            </form>
+            <div class="resultado">
+                <p id="gastotal">
+                    Campos Necessários: Origem, Destino, Distância (em km), Quantos km
+                    por litro o veículo faz, Valor Médio do Combustível, botão de Calcular.
+                    Ao clicar em calcular, deverá ser calculado a quantidade de
+                    combustível que o carro gastará na viagem e o valor que o usuário
+                    pagará para se deslocar de viagem.
+                    Exemplo de Mensagem Final: Você precisará de XX litros de combustível
+                    e gastará R$ XXX para se deslocar de XXX para XXX
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="gastar" style="display:none;">
+        <div class="line">
+            <span> Sortear Números </span>
+            <hr>
+        </div>
+
+        <div class="descricao">
+            <p>Aqui você consegue realizar um sorteio!</p>
+        </div>
+
+        <div class="form">
+            <form class="calculadora">
+                <input type="number" id="vi" placeholder="Insira o menor valor possível">
+                <input type="number" id="vf" placeholder="Insira o maior valor possível">
+                <input type="number" id="qtonum" placeholder="Insira a quantidade de numeros">
+                <button type="submit" onclick="sorteio(document.getElementById('vi').value,document.getElementById('vf').value,document.getElementById('qtonum').value)">Sortear</button>
+            </form>
+
+            <div class="resultado">
+                <p id="jackpot">
                 </p>
             </div>
         </div>
