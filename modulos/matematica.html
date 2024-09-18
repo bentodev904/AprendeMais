@@ -63,23 +63,22 @@
     </div>
     <!-- divs importantes do IMC, Conversor, Gastos e Sorteador -->
     <div id="imc" style="display:none;">
-    <div class="line">
-        <span> Calcular IMC </span>
-        <hr>
-    </div>
+        <div class="line">
+            <span> Calcular IMC </span>
+            <hr>
+        </div>
 
     
         <div class="descricao">
             <p>Aqui você consegue calcular seu IMC com base no seu peso e altura!</p>
         </div>
 
-        <div class="form" id="imc">
+        <div class="formulario">
             <form class="calculadora">
                 <input type="text" id="name" placeholder="Insira o Nome">
                 <input type="number" id="peso" placeholder="Insira o Peso (em kg)">
                 <input type="number" id="altura" placeholder="Insira a Altura (em cm)">
-                <button type="submit"
-                    onclick="imc(document.getElementById('name').value,document.getElementById('peso').value,document.getElementById('altura').value)">Calcular</button>
+                <button type="submit" onclick="imc(document.getElementById('name').value,document.getElementById('peso').value,document.getElementById('altura').value)">Calcular</button>
             </form>
             <div class="resultado">
                 <p id="imcfinal">
@@ -98,15 +97,14 @@
             <p>Aqui você consegue converter moedas!</p>
         </div>
 
-        <div class="form">
-            <form class="moeda">  
+        <div class="formulario">
+            <form class="calculadora">  
                 <input type="radio" name="cruzeiro"/>
                 <label for="cruzeiro">Cruzeiro</label>
                 <input type="radio" name="kwanza"/>
                 <label for="kwanza">Kwanza</label>
                 <input type="radio" name="dogecoin"/>
                 <label for="dogecoin">Doge Coin</label>
-                <input  type="/>
                 <button type="submit" onclick="conv(document.getElementsByName(''))">Calcular</button>
             </form>
             <div class="resultado">
@@ -134,7 +132,7 @@
             <p>Aqui você consegue calcular seus gastos com combustível!</p>
         </div>
 
-        <div class="form">
+        <div class="formulario">
             <form class="calculadora">
                 <input type="text" id="start" placeholder="Insira a Origem">
                 <input type="text" id="end" placeholder="Insira o Destino">
@@ -157,7 +155,7 @@
         </div>
     </div>
 
-    <div id="gastar" style="display:none;">
+    <div id="sortear" style="display:none;">
         <div class="line">
             <span> Sortear Números </span>
             <hr>
@@ -167,7 +165,7 @@
             <p>Aqui você consegue realizar um sorteio!</p>
         </div>
 
-        <div class="form">
+        <div class="formulario">
             <form class="calculadora">
                 <input type="number" id="vi" placeholder="Insira o menor valor possível">
                 <input type="number" id="vf" placeholder="Insira o maior valor possível">
