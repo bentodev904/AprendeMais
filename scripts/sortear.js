@@ -3,7 +3,7 @@ try{
         x = document.getElementById("jackpot")
         var sorteado = []
         for(var cont = 0 ; cont < qtonum ; cont++){
-            sorteado[cont] += Math.floor(Math.random() * (vf - vi + 1)) + vi
+            sorteado[cont] = Math.floor(Math.random() * (vf - vi + 1)) + vi
         }
         x.innerHTML = "Quantidade de Números Solicitados: "+qtonum+"<br>"+"Números Sorteados: "+sorteado
     }

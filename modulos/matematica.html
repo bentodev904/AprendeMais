@@ -34,6 +34,7 @@
             </div>
         </div>
     </div>
+    <button id="volta" onclick="troca('back')">Voltar</button>
     <div id="all">
         <div class="line">
             <span> Matemática </span>
@@ -78,7 +79,8 @@
                 <input type="text" id="name" placeholder="Insira o Nome">
                 <input type="number" id="peso" placeholder="Insira o Peso (em kg)">
                 <input type="number" id="altura" placeholder="Insira a Altura (em cm)">
-                <button type="submit" onclick="imc(document.getElementById('name').value,document.getElementById('peso').value,document.getElementById('altura').value)">Calcular</button>
+                <button type="button" onclick="imc(document.getElementById('name').value,document.getElementById('peso').value,document.getElementById('altura').value)">Calcular</button>
+                <button type="button" onclick="limpa(1)">limpar</button>
             </form>
             <div class="resultado">
                 <p id="imcfinal">
@@ -105,7 +107,7 @@
                 <label for="kwanza">Kwanza</label>
                 <input type="radio" name="dogecoin"/>
                 <label for="dogecoin">Doge Coin</label>
-                <button type="submit" onclick="conv(document.getElementsByName(''))">Calcular</button>
+                <button type="button" onclick="conv(document.getElementsByName(''))">Calcular</button>
             </form>
             <div class="resultado">
                 <p id="conversao">
@@ -139,7 +141,7 @@
                 <input type="number" id="km" placeholder="Insira a Distância">
                 <input type="number" id="gas" placeholder="Insira quantos km por litro o veículo faz">
                 <input type="number" id="gasol" placeholder="Insira o valor médio do lito de combustível">
-                <button type="submit">Calcular</button>
+                <button type="button">Calcular</button>
             </form>
             <div class="resultado">
                 <p id="gastotal">
@@ -170,7 +172,7 @@
                 <input type="number" id="vi" placeholder="Insira o menor valor possível">
                 <input type="number" id="vf" placeholder="Insira o maior valor possível">
                 <input type="number" id="qtonum" placeholder="Insira a quantidade de numeros">
-                <button type="submit" onclick="sorteio(document.getElementById('vi').value,document.getElementById('vf').value,document.getElementById('qtonum').value)">Sortear</button>
+                <button type="button" onclick="sorteio(document.getElementById('vi').value,document.getElementById('vf').value,document.getElementById('qtonum').value)">Sortear</button>
             </form>
 
             <div class="resultado">

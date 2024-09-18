@@ -812,6 +812,7 @@ footer{
     border: 0px;
     border-radius: 5px;
     justify-self: center;
+    margin: 2px;
 }
 
 .resultado{
@@ -825,4 +826,11 @@ footer{
     border-color: #E4572E;
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
+}
+#volta{
+    margin-top: 10vh;
+    margin-left:10%;
+    display:none;
+    width: 100px;
+    height: 80px;
 }
