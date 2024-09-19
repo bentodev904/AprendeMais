@@ -31,8 +31,13 @@ function troca(container) {
 
 function limpa(form) {
     if (form == 1) {
-        document.getElementById("name",).value = ''
+        document.getElementById("name", ).value = ''
         document.getElementById("peso",).value = ''
         document.getElementById("altura").value = ''
+    }
+    if (form == 2) {
+        document.getElementsByName('cruzeiro').value = false
+        document.getElementsByName('kwanza').value = false
+        document.getElementsByName('dogecoin').value = false
     }
 }

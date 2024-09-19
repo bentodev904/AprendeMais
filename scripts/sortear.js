@@ -2,9 +2,11 @@ try{
     function sorteio(vi,vf,qtonum) {
         x = document.getElementById("jackpot")
         var sorteado = []
+        vf2 = vf + 1
         for(var cont = 0 ; cont < qtonum ; cont++){
-            sorteado[cont] = Math.floor(Math.random() * (vf - vi + 1)) + vi
+            sorteado[cont] = Math.floor(Math.random() * (vf2))
         }
+        alert(vf2)
         x.innerHTML = "Quantidade de Números Solicitados: "+qtonum+"<br>"+"Números Sorteados: "+sorteado
     }
 }catch(erro){

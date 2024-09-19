@@ -1,6 +1,6 @@
 try{
     function imc(name, peso, altura) {
-        var IMC = peso / (altura * altura);
+        var IMC = (peso / ((altura/100) * (altura/100)));
         var resultado;
         if (IMC < 18.5) {
             resultado = "Abaixo do peso";
