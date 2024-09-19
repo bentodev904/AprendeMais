@@ -75,13 +75,13 @@
         </div>
 
         <div class="formulario">
-            <form class="calculadora">
+            <form id="calculadora">
                 <input type="text" id="name" placeholder="Insira o Nome">
                 <input type="number" id="peso" placeholder="Insira o Peso (em kg)">
                 <input type="number" id="altura" placeholder="Insira a Altura (em cm)">
                 <button type="button"
                     onclick="imc(document.getElementById('name').value,document.getElementById('peso').value,document.getElementById('altura').value)">Calcular</button>
-                <button type="button" onclick="limpa(1)">limpar</button>
+                <button type="button" onclick="limpa()">Limpar Formulário</button>
             </form>
             <div class="resultado">
                 <p id="imcfinal">
@@ -102,25 +102,13 @@
 
         <div class="formulario">
             <form class="calculadora">
-                <h2>Valor a ser convertido</h2>
-                <input type="number" id="valor">
-                <p>Moeda inicial</p>
-                <input type="radio" name="real" />
-                <label for="real">Real</label>
-                <input type="radio" name="dolar" />
-                <label for="dolar">Dólar </label>
-                <input type="radio" name="metical" />
-                <label for="metical">Metical moçambicano</label>
-            </form>
-            <form class="calculadora">
-                <p>Converter para:</p>
-                <input type="radio" name="real2" />
-                <label for="real2">Real</label>
+                <input type="radio" name="cruzeiro" />
+                <label for="cruzeiro">Cruzeiro</label>
                 <input type="radio" name="kwanza" />
                 <label for="kwanza">Kwanza</label>
                 <input type="radio" name="dogecoin" />
                 <label for="dogecoin">Doge Coin</label>
-                <button type="button" onclick="conv(document.getElementsByName('real','dolar','metical','real2','kwanza','dogecoin'))">Calcular</button>
+                <button type="button" onclick="conv(document.getElementsByName(''))">Calcular</button>
                 <button type="button" onclick="limpa(2)">limpar</button>
             </form>
             <div class="resultado">
@@ -149,14 +137,14 @@
         </div>
 
         <div class="formulario">
-            <form class="calculadora">
+            <form id="calculadora">
                 <input type="text" id="start" placeholder="Insira a Origem">
                 <input type="text" id="end" placeholder="Insira o Destino">
                 <input type="number" id="km" placeholder="Insira a Distância">
                 <input type="number" id="gas" placeholder="Insira quantos km por litro o veículo faz">
                 <input type="number" id="gasol" placeholder="Insira o valor médio do lito de combustível">
                 <button type="button">Calcular</button>
-                <button type="button" onclick="limpa(3)">limpar</button>
+                <button type="button" onclick="limpa()">Limpar Formulário</button>
             </form>
             <div class="resultado">
                 <p id="gastotal">
@@ -183,13 +171,13 @@
         </div>
 
         <div class="formulario">
-            <form class="calculadora">
+            <form id="calculadora">
                 <input type="number" id="vi" placeholder="Insira o menor valor possível">
                 <input type="number" id="vf" placeholder="Insira o maior valor possível">
                 <input type="number" id="qtonum" placeholder="Insira a quantidade de numeros">
                 <button type="button"
                     onclick="sorteio(document.getElementById('vi').value,document.getElementById('vf').value,document.getElementById('qtonum').value)">Sortear</button>
-                <button type="button" onclick="limpa(4)">limpar</button>
+                <button type="button" onclick="limpa()">Limpar Formulário</button>
             </form>
 
             <div class="resultado">
