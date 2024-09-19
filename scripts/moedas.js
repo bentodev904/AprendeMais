@@ -25,5 +25,8 @@ function conv(real,dolar,metical,real2,kwanza,dogecoin){
     }
     var conver = x1 * x2
     vf = conver * valor
-    document.getElementById("conversao").innerHTML = "O valor "+valor+" convertido de "+mi+" para "+mf+" é de "+vf
+    alert('valor = '+valor)
+    alert('conver = '+conver)
+    alert('sexo')
+    document.getElementById('conversao').innerHTML = "O valor "+valor+" convertido de "+mi+" para "+mf+" é de "+vf
 }
