@@ -102,13 +102,25 @@
 
         <div class="formulario">
             <form class="calculadora">
-                <input type="radio" name="cruzeiro" />
-                <label for="cruzeiro">Cruzeiro</label>
+                <h2>Valor a ser convertido</h2>
+                <input type="number" id="valor">
+                <p>Moeda inicial</p>
+                <input type="radio" name="real" />
+                <label for="real">Real</label>
+                <input type="radio" name="dolar" />
+                <label for="dolar">Dólar </label>
+                <input type="radio" name="metical" />
+                <label for="metical">Metical moçambicano</label>
+            </form>
+            <form class="calculadora">
+                <p>Converter para:</p>
+                <input type="radio" name="real2" />
+                <label for="real2">Real</label>
                 <input type="radio" name="kwanza" />
                 <label for="kwanza">Kwanza</label>
                 <input type="radio" name="dogecoin" />
                 <label for="dogecoin">Doge Coin</label>
-                <button type="button" onclick="conv(document.getElementsByName(''))">Calcular</button>
+                <button type="button" onclick="conv(document.getElementsByName('real','dolar','metical','real2','kwanza','dogecoin'))">Calcular</button>
                 <button type="button" onclick="limpa(2)">limpar</button>
             </form>
             <div class="resultado">

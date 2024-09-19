@@ -1,23 +1,29 @@
-mano
-
-// try{
-//     function imc(name, peso, altura) {
-//         var IMC = peso / (altura * altura);
-//         var resultado;
-//         if (IMC < 18.5) {
-//             resultado = "Abaixo do peso";
-//         } else if (IMC >= 18.5 && IMC < 25) {
-//             resultado = "Normal";
-//         } else if (IMC >= 25 && IMC < 29.9) {
-//             resultado = "Sobrepeso";
-//         } else if (IMC >= 30) {
-//             resultado = "Obesidade";
-//         }
-//         var x = document.getElementById('imcfinal');
-//         x.innerHTML = name + ": " + resultado;
-//     }
-// }catch(erro){
-//     console.log(`O nome do erro é: ${erro.name}\n`);
-//     console.log(`A mensagem do erro é: ${erro.message}\n`);
-//     console.log(`A stack do erro é: ${erro.stack}\n`);
-// }
+function conv(real,dolar,metical,real2,kwanza,dogecoin){
+    if (real == true){
+        x1 = 1
+        mi = "Real"
+    }
+    if (dolar == true){
+        x1 = 5.42
+        mi = "Dólar"
+    }
+    if (metical == true){
+        x1 = 0.085
+        mi = "Metical Moçambicano"
+    }
+    if (real2 == true){
+        x2 = 1
+        mf = "Real"
+    }
+    if (kwanza == true){
+        x2 = 171.68
+        mf = "Kwanza"
+    }
+    if (dogecoin == true){
+        x2 = 1.76
+        mf = "Dogecoin"
+    }
+    var conver = x1 * x2
+    vf = conver * valor
+    document.getElementById("conversao").innerHTML = "O valor "+valor+" convertido de "+mi+" para "+mf+" é de "+vf
+}
