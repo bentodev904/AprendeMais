@@ -9,6 +9,7 @@
     <script src="../scripts/calculoimc.js" type="text/javascript"></script>
     <script src="../scripts/sortear.js" type="text/javascript"></script>
     <script src="../scripts/moedas.js" type="text/javascript"></script>
+    <script src="../scripts/gasolina.js" type="text/javascript"></script>
     <title>Matematica</title>
 </head>
 
@@ -81,7 +82,6 @@
                 <input type="number" id="altura" placeholder="Insira a Altura (em cm)">
                 <button type="button"
                     onclick="imc(document.getElementById('name').value,document.getElementById('peso').value,document.getElementById('altura').value)">Calcular</button>
-                <button type="button" onclick="limpa(1)">limpar</button>
             </form>
             <div class="resultado">
                 <p id="imcfinal">
@@ -105,34 +105,25 @@
                 <h2>Valor a ser convertido</h2>
                 <input type="number" id="valor">
                 <p>Moeda inicial</p>
-                <input type="radio" name="real" />
                 <label for="real">Real</label>
-                <input type="radio" name="dolar" />
+                <input type="radio" id="real" name="1" />
                 <label for="dolar">Dólar </label>
-                <input type="radio" name="metical" />
+                <input type="radio" id="dolar" name="1" />
                 <label for="metical">Metical moçambicano</label>
+                <input type="radio" id="metical" name="1" />
             </form>
             <form id="calculadora">
                 <p>Converter para:</p>
-                <input type="radio" name="real2" />
+                <input type="radio" id="real2" name="2" />
                 <label for="real2">Real</label>
-                <input type="radio" name="kwanza" />
+                <input type="radio" id="kwanza" name="2" />
                 <label for="kwanza">Kwanza</label>
-                <input type="radio" name="dogecoin" />
+                <input type="radio" id="dogecoin" name="2" />
                 <label for="dogecoin">Doge Coin</label>
-                <button type="button" onclick="conv(document.getElementsByName('real','dolar','metical','real2','kwanza','dogecoin'))">Calcular</button>
-                <button type="button" onclick="limpa(2)">limpar</button>
+                <button type="button" onclick="conv(document.getElementById('valor').value)">Calcular</button>
             </form>
             <div class="resultado">
                 <p id="conversao">
-                    <!-- Campos Necessários: Moeda Base (3 opções – Ex: Real, Dólar, Euro),
-                    Moeda a ser Convertido (3 opções – Ex: Franco, Peso, Dólar), Valor a ser
-                    convertido, botão de Calcular.
-                    Ao clicar em calcular, deverá ser convertido o valor digitado para a
-                    moeda informada. Verifique a cotação próximo ao valor real para
-                    realizar as conversões.
-                    Exemplo de Mensagem Final: O valor XXX convertido de XXX para XXX é
-                    de XXX -->
                 </p>
             </div>
         </div>
@@ -152,21 +143,20 @@
             <form id="calculadora">
                 <input type="text" id="start" placeholder="Insira a Origem">
                 <input type="text" id="end" placeholder="Insira o Destino">
-                <input type="number" id="km" placeholder="Insira a Distância">
+                <input type="number" id="km" placeholder="Insira a Distância (em km)">
                 <input type="number" id="gas" placeholder="Insira quantos km por litro o veículo faz">
                 <input type="number" id="gasol" placeholder="Insira o valor médio do lito de combustível">
-                <button type="button">Calcular</button>
-                <button type="button" onclick="limpa(3)">limpar</button>
+                <button type="button" onclick="gaso()">Calcular</button>
             </form>
             <div class="resultado">
                 <p id="gastotal">
-                    Campos Necessários: Origem, Destino, Distância (em km), Quantos km
+                    <!-- Campos Necessários: Origem, Destino, Distância (em km), Quantos km
                     por litro o veículo faz, Valor Médio do Combustível, botão de Calcular.
                     Ao clicar em calcular, deverá ser calculado a quantidade de
                     combustível que o carro gastará na viagem e o valor que o usuário
                     pagará para se deslocar de viagem.
                     Exemplo de Mensagem Final: Você precisará de XX litros de combustível
-                    e gastará R$ XXX para se deslocar de XXX para XXX
+                    e gastará R$ XXX para se deslocar de XXX para XXX -->
                 </p>
             </div>
         </div>
@@ -189,7 +179,6 @@
                 <input type="number" id="qtonum" placeholder="Insira a quantidade de numeros">
                 <button type="button"
                     onclick="sorteio(document.getElementById('vi').value,document.getElementById('vf').value,document.getElementById('qtonum').value)">Sortear</button>
-                <button type="button" onclick="limpa(4)">limpar</button>
             </form>
 
             <div class="resultado">

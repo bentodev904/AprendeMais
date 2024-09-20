@@ -1,32 +1,33 @@
-function conv(real,dolar,metical,real2,kwanza,dogecoin){
-    if (real == true){
+function conv(valor) {
+    x1 = 0
+    x2 = 0
+    mi = 0
+    mf = 0
+    if (document.getElementById('real').checked == true) {
         x1 = 1
         mi = "Real"
     }
-    if (dolar == true){
+    if (document.getElementById('dolar').checked == true) {
         x1 = 5.42
         mi = "Dólar"
     }
-    if (metical == true){
+    if (document.getElementById('metical').checked == true) {
         x1 = 0.085
         mi = "Metical Moçambicano"
     }
-    if (real2 == true){
+    if (document.getElementById('real2').checked == true) {
         x2 = 1
         mf = "Real"
     }
-    if (kwanza == true){
+    if (document.getElementById('kwanza').checked == true) {
         x2 = 171.68
         mf = "Kwanza"
     }
-    if (dogecoin == true){
+    if (document.getElementById('dogecoin').checked == true) {
         x2 = 1.76
         mf = "Dogecoin"
     }
-    var conver = x1 * x2
-    vf = conver * valor
-    alert('valor = '+valor)
-    alert('conver = '+conver)
-    alert('sexo')
-    document.getElementById('conversao').innerHTML = "O valor "+valor+" convertido de "+mi+" para "+mf+" é de "+vf
+    con = x1 * x2
+    vf = con * valor
+    document.getElementById('conversao').innerHTML = "O valor " + valor + " convertido de " + mi + " para " + mf + " é de " + vf
 }

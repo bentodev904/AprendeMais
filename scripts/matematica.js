@@ -28,7 +28,3 @@ function troca(container) {
         document.getElementById("volta").style = "display:none;"
     }
 }
-
-function limpa() {
-    document.getElementById('calculadora').reset();
-}
